@@ -1,0 +1,64 @@
+#netzero-wrapper .powered-by,
+#netzero-company-wrapper .powered-by {
+  font-size: 12px;
+  display: block;
+  font-family: inherit;
+}
+
+#netzero-wrapper .powered-by a,
+#netzero-company-wrapper .powered-by a {
+  color: #718096;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#netzero-wrapper {
+  margin-bottom: 1rem;
+}
+#netzero-wrapper p {
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+#netzero-wrapper input {
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  margin-top: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+}
+
+#netzero-wrapper input:active::after,
+#netzero-wrapper input:checked:active::after,
+#netzero-wrapper input:checked::after {
+  content: "\2714";
+  line-height: 1;
+  font-size: inherit;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  color: #fff;
+}
+
+#netzero-wrapper label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+/* 
+Remove (optional) to save space (also, it's a checkbox why does it need this?)
+*/
+#netzero-wrapper label .optional {
+  display: none;
+}
